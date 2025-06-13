@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@nktkas/hyperliquid": "^0.22.1",
+    "b58": "^4.0.3",
+    "base32.js": "^0.1.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "ethers": "^5.8.0",
+    "express": "^5.1.0",
+    "fast-xml-parser": "^5.2.3",
+    "graphql-request": "^7.1.2",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "js-md5": "^0.8.3",
+    "mongodb": "^6.16.0",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "qrcode": "^1.5.4",
+    "querystring": "^0.2.1",
+    "redis": "^5.0.1",
+    "request": "^2.88.2",
+    "tonweb": "^0.0.66",
+    "url": "^0.11.4",
+    "uuid": "^11.1.0"
+  }
+}
