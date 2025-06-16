@@ -80,7 +80,7 @@ app.post('/deposite', async function(req, res) {
 })
 
 app.get('/deposite/:id', async function(req, res) {
-        const ret = await modules.order.checkOrder(res.locals.auth,req.params.id);
+        const ret = await modules.order.checkOrder(req.params.oid);
         return res.status(200).send({
             "code": 200,
             "data": ret

@@ -8,6 +8,10 @@ require('dotenv').config();
 
 const provider = new ethers.providers.JsonRpcProvider(process.env.EVM_PROVIDER);
 
+const transport = new hl.HttpTransport();
+
+const infoClient = new hl.InfoClient({ transport });
+
 const wallet = new ethers.Wallet(process.env.EVM_KP,provider);
 
 const usdc = new ethers.Contract(cfg.contract.tokens.usdc, cfg.contract.tokens.abi, wallet);
