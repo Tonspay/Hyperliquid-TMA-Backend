@@ -79,7 +79,7 @@ app.post('/deposite', async function(req, res) {
     return ret;
 })
 
-app.get('/deposite/:id', async function(req, res) {
+app.get('/deposite/:oid', async function(req, res) {
         const ret = await modules.order.checkOrder(req.params.oid);
         return res.status(200).send({
             "code": 200,

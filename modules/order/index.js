@@ -13,7 +13,7 @@ const checkOrder = async(oid) =>
             oid,
         }
     );
-    console.log(o);
+    // console.log(o.status);
     return (o.status === "DONE")?true:false;
 }
 
@@ -82,7 +82,7 @@ async function newOrder(address,amount,res) {
                 {
                     //Onchain TX send success 
                     await sleep(15000) // Sleep for 15s for Hyperliquid confirm the txn
-                    const confirmTransfer = await web3.transferHyperliquidUSDCVaultToAccount((finalAmount).toFixed(2) , address)
+                    const confirmTransfer = await web3.transferHyperliquidUSDCVaultToAccount((finalAmount-1).toFixed(2) , address)
                     if(confirmTransfer)
                     {
                         return true;
